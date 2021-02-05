@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home/home_screen.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -13,9 +15,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Container(
-        color: Colors.blue,
-      ),
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     );
   }
 }
